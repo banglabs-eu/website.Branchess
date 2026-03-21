@@ -449,6 +449,64 @@ img { max-width: 100%; display: block; }
   text-align: right;
 }
 
+/* === Screenshot Gallery === */
+.screenshot-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.screenshot-card {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.screenshot-card:hover {
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 0 30px var(--accent-glow);
+}
+.screenshot-card:nth-child(even) {
+  direction: rtl;
+}
+.screenshot-card:nth-child(even) > * {
+  direction: ltr;
+}
+.screenshot-img {
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+.screenshot-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.screenshot-caption h3 {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.screenshot-caption p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .screenshot-card {
+    grid-template-columns: 1fr;
+  }
+  .screenshot-card:nth-child(even) {
+    direction: ltr;
+  }
+}
+
 /* === How It Works Diagram === */
 .how-diagram {
   display: flex;
