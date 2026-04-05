@@ -37,7 +37,7 @@
         <a href="#screenshots">Screenshots</a>
         <a href="#features">Features</a>
         <a href="#how-it-works">How It Works</a>
-        <a href="#get-started">Get Started</a>
+        <a href="#play">Play</a>
       </div>
       <div class="nav-actions">
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
@@ -91,23 +91,8 @@
             <span class="flow-desc">Navigate the full game tree</span>
           </div>
         </div>
-        <div class="hero-get-started">
-          <h3 class="get-started-heading">Platform</h3>
-          <div class="hero-platforms">
-            <a href="https://github.com/banglabs-eu/python.Branchess" target="_blank" rel="noopener" class="platform-tag platform-active">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-              Python
-              <small class="platform-clarifier">Desktop</small>
-            </a>
-            <a href="https://play-branchess.bang-labs.eu" target="_blank" rel="noopener" class="platform-tag">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              Web
-              <small class="platform-clarifier">Online</small>
-            </a>
-          </div>
-        </div>
         <div class="hero-ctas">
-          <a href="#get-started" class="btn btn-primary">Get Started</a>
+          <a href="https://play-branchess.bang-labs.eu" target="_blank" rel="noopener" class="btn btn-primary">Play Now</a>
           <a href="#concept" class="btn btn-secondary">Learn More</a>
         </div>
       </div>
@@ -166,29 +151,29 @@
       <div class="screenshot-gallery">
         <div class="screenshot-card reveal">
           <div class="screenshot-img">
-            <img src="screenshots/game-tree.png" alt="Branchess game in progress with a branching game tree visible in the side panel" loading="lazy">
+            <img src="screenshots/game-tree.png" alt="Branchess with branching game tree and opening book ghost branches" loading="lazy">
           </div>
           <div class="screenshot-caption">
-            <h3>Branching game tree</h3>
-            <p>Play through an opening, go back, and try a different line. Every variation is preserved as a branch in the tree panel.</p>
+            <h3>Opening book and game tree</h3>
+            <p>Ghost branches show 60+ opening continuations with win/draw/loss stats. Click any opening to jump to that position. Annotate moves and write notes.</p>
           </div>
         </div>
         <div class="screenshot-card reveal">
           <div class="screenshot-img">
-            <img src="screenshots/legal-moves.png" alt="Branchess board showing highlighted legal moves for a selected knight" loading="lazy">
+            <img src="screenshots/legal-moves.png" alt="Branchess board with drag-and-drop pieces and engine controls" loading="lazy">
           </div>
           <div class="screenshot-caption">
-            <h3>Interactive board</h3>
-            <p>Select a piece to see its legal moves highlighted. Click a destination to play. The engine responds automatically.</p>
+            <h3>Play your way</h3>
+            <p>Drag-and-drop or click-to-move. Play both sides, interrupt the engine mid-thought, or move pieces freely for analysis. Flip the board or use 2P mode.</p>
           </div>
         </div>
         <div class="screenshot-card reveal">
           <div class="screenshot-img">
-            <img src="screenshots/setup-mode.png" alt="Branchess setup mode with piece palette and custom position" loading="lazy">
+            <img src="screenshots/setup-mode.png" alt="Branchess fullscreen tree view with annotations and endgame tablebases" loading="lazy">
           </div>
           <div class="screenshot-caption">
-            <h3>Setup mode</h3>
-            <p>Place pieces freely from the palette to create any position. Toggle sides and start playing from your custom board.</p>
+            <h3>Deep analysis</h3>
+            <p>Fullscreen tree mode with zoom and pan. Syzygy endgame tablebases for perfect play. Export trees as Mermaid diagrams. Share positions via URL.</p>
           </div>
         </div>
       </div>
@@ -327,26 +312,18 @@
     </div>
   </section>
 
-  <!-- Get Started -->
-  <section class="section" id="get-started">
+  <!-- Play -->
+  <section class="section" id="play">
     <div class="container">
       <div class="section-header reveal">
-        <h2>Get Started</h2>
-        <p>Up and running in under a minute.</p>
+        <h2>Play a Game</h2>
+        <p>No download, no signup. Runs entirely in your browser.</p>
       </div>
       <div class="grid grid-2">
-        <div class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-          </div>
-          <h3>Setup</h3>
-          <div class="code-block">
-            <code>python3 -m venv .venv</code>
-            <code>source .venv/bin/activate</code>
-            <code>pip install -r requirements.txt</code>
-            <code>python Branchess.py</code>
-          </div>
-          <p>Requires Python 3. Stockfish binary is included — no extra downloads needed.</p>
+        <div class="card reveal" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+          <h3 style="font-size: 22px;">Ready to play?</h3>
+          <p>Stockfish 18 runs locally via WebAssembly. Your games stay in your browser. Nothing is sent to a server.</p>
+          <a href="https://play-branchess.bang-labs.eu" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 8px;">Open Branchess</a>
         </div>
         <div class="card reveal">
           <div class="card-icon">
@@ -354,17 +331,16 @@
           </div>
           <h3>Keyboard shortcuts</h3>
           <div class="shortcut-list">
-            <div class="shortcut-row"><kbd>Left / Right</kbd><span>Navigate back/forward (single ply)</span></div>
-            <div class="shortcut-row"><kbd>Up / Down</kbd><span>Switch branches at a fork</span></div>
-            <div class="shortcut-row"><kbd>Space</kbd><span>Request engine move</span></div>
+            <div class="shortcut-row"><kbd>Left / Right</kbd><span>Back / forward one move</span></div>
+            <div class="shortcut-row"><kbd>Up / Down</kbd><span>Switch branches</span></div>
+            <div class="shortcut-row"><kbd>Space</kbd><span>Engine move</span></div>
             <div class="shortcut-row"><kbd>U</kbd><span>Undo</span></div>
             <div class="shortcut-row"><kbd>F</kbd><span>Flip board</span></div>
-            <div class="shortcut-row"><kbd>H</kbd><span>Toggle move highlighting</span></div>
             <div class="shortcut-row"><kbd>N</kbd><span>New game</span></div>
-            <div class="shortcut-row"><kbd>E</kbd><span>Toggle setup mode</span></div>
-            <div class="shortcut-row"><kbd>Ctrl+S</kbd><span>Save position</span></div>
+            <div class="shortcut-row"><kbd>E</kbd><span>Setup mode</span></div>
+            <div class="shortcut-row"><kbd>Ctrl+S</kbd><span>Save</span></div>
             <div class="shortcut-row"><kbd>Ctrl+V</kbd><span>Paste PGN</span></div>
-            <div class="shortcut-row"><kbd>Right-click</kbd><span>Annotate move (!, !!, ?, ??)</span></div>
+            <div class="shortcut-row"><kbd>Right-click node</kbd><span>Annotate (!, !!, ?, ??)</span></div>
             <div class="shortcut-row"><kbd>Double-click node</kbd><span>Write notes</span></div>
             <div class="shortcut-row"><kbd>Scroll wheel</kbd><span>Zoom tree</span></div>
           </div>
@@ -386,7 +362,7 @@
         <p class="footer-tagline">Explore every line. Branch every move. Master the tree.</p>
       </div>
       <div class="footer-links">
-        <a href="https://github.com">GitHub</a>
+        <a href="https://github.com/banglabs-eu/web.Branchess">GitHub</a>
       </div>
       <div class="footer-copy">
         <p>&copy; 2025 Branchess</p>
