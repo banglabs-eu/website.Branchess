@@ -603,6 +603,20 @@ img { max-width: 100%; display: block; }
   transform: translateY(0);
 }
 
+/* === GitHub Link === */
+.nav-github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  transition: border-color 0.2s, color 0.2s;
+}
+.nav-github:hover { border-color: var(--text-secondary); color: var(--text-primary); }
+
 /* === Theme Toggle === */
 .theme-toggle {
   display: flex;
